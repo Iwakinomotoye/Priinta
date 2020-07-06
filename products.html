@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Priinta:: Abuja</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./dashboard-landing.css"/>
+</head>
+<body>
+    <header class="no-select">
+        <div class="mobile-view top-edge">
+            <span class="line-through"></span>
+        </div>
+        <nav>
+            <a href="./index.html" class="mobile-view">
+                <img src="./images/nav-mobile-icon.svg" alt="website logo">
+            </a>
+            <a href="./index.html" class="desktop-view">
+                <img src="./images/nav-desktop-icon.svg" alt="website logo">
+            </a>
+            <ul id="nav-items" class="nav-items">
+                <div class="flex">
+                <a href="./index.html">
+                    <img class="mobile-view" src="./images/nav-mobile-icon.svg" alt="website logo">
+                </a>
+                </div>
+                <a href="#design">Design</a>
+                <a href="#Print">Print</a>
+                <a href="#Package">Package</a>
+                <a href="./products.html">Products</a>
+                <span class="nav-division"></span>
+                <a href="./signup.html" class="form">SIGN UP</a>
+                <a href="./login.html" class="form">LOGIN</a>
+                <a class="button" href="./signup.html"><span class="btn-text">Become a Merchant</span><span class="hover-btn"></span></a>
+            </ul>
+            <div class="mobile-view">
+                <img class="nav-open" id="nav-open" src="./images/nav-menu.svg" alt="open navbar">
+                <img class="nav-close" id="nav-close" src="./images/nav-cancel.svg" alt="close navbar">
+            </div>
+            <div class="d-nav-items desktop-view">
+                <a href="./products.html">PRODUCTS</a>
+                <a href="./signup.html" class="button"><span class="btn-text">Become a Merchant</span><span class="hover-btn"></span></a>
+                <a href="./login.html">ACCOUNT</a>
+                <a href="#cart">CART (0)</a>
+            </div>
+        </nav>
+    </header>
+    <div class="background-1"></div>
+<main class="noselect">
+    <section class="update-machines" id="update-products">
+        <div class="start-update">
+            <img src="./images/products-icon.svg"
+            style="width:100px; height:100px" alt="">
+            <h3>Add your products</h3>
+            <div>
+                To start getting access to job postings, you need to complete your profile and expertise
+            </div>
+            <button id="agree-update">Add Products</button>
+        </div>
+    </section>
+    <section class="list-of-products grid-view hide" id="product-list">
+        <div class="no-table">
+            <div>Your Products(24)</div>
+            <button id="add-machine-btn">
+                <img class="add-icon" src="./images/add-icon.svg" alt="">
+                <span>Add Product</span>
+            </button>
+        </div>
+        <div class="handler-container">
+            <div class="page-handler">
+                <div>Filter by category</div>
+                <select name="" id="">
+            <!-- i would prefer to use div element to power the pop-up instead of select element -->
+                    <option value="">All</option>
+                    <option value="">Printing</option>
+                    <option value="">Design</option>
+                    <option value="">Branding</option>
+                </select>
+            </div>
+            <div class="page-handler search">
+                <div>Search</div>
+                <div class="input">
+                    <img src="./images/search-icon.svg" alt="">
+                    <input type="search" placeholder="search products">
+                </div>
+            </div>
+            <div class="page-handler">
+                <div>Layout</div>
+                <div>
+                    <span id="grid" class="icon-grid-icon1 grid"></span>
+                    <span id="column" class="icon-column-icon column"></span>
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="product-container">
+                <div class="view">
+                    <img src="./images/calendar.svg" alt="">
+                    <div class="price">&#8358;3,999/unit</div>
+                </div>
+                <div class="list">
+                    <div>
+                        <span>Calendar</span>
+                        <span>Name</span>
+                    </div>
+                    <div>
+                        <span>Souvenirs</span>
+                        <span>Category</span>
+                    </div>
+                    <div>
+                        <span>Calendar</span>
+                        <span>Sub-category</span>
+                    </div>
+                    <div>
+                        <span>A5 size</span>
+                        <span>Dimension</span>
+                    </div>
+                    <div>
+                        <span class="price">&#8358;3,999</span>
+                        <span>price/unit</span>
+                    </div>
+                    <div class="view-btn">
+                        <span id="details-1b">View</span>
+                    </div>
+                    <div class="edit-btn">
+                        <span>Edit</span>
+                    </div>
+                    <div class="delete-btn">
+                        <span id="delete-1b">Delete</span>
+                    </div>
+                </div>
+                <div class="about">
+                    <div>
+                        <span>Calendar Printing</span>
+                        <span>Category</span>
+                    </div>
+                    <div>
+                        <span>A5 size</span>
+                        <span>Dimension</span>
+                    </div>
+                </div>
+                <div class="handler">
+                    <div class="view-btn" id="details-1">View</div>
+                    <div class="edit-btn">Edit</div>
+                    <div class="delete-btn" id="delete-1">Delete</div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="view">
+                    <img src="./images/brown-bag.svg" alt="">
+                    <div class="price">&#8358;5,999/unit</div>
+                </div>
+                <div class="list">
+                    <div>
+                        <span>Paper bag</span>
+                        <span>Name</span>
+                    </div>
+                    <div>
+                        <span>Souvenirs</span>
+                        <span>Category</span>
+                    </div>
+                    <div>
+                        <span>Paper Bag</span>
+                        <span>Sub-category</span>
+                    </div>
+                    <div>
+                        <span>A3 size</span>
+                        <span>Dimension</span>
+                    </div>
+                    <div>
+                        <span class="price">&#8358;5,999</span>
+                        <span>price/unit</span>
+                    </div>
+                    <div class="view-btn">
+                        <span id="details-2b">View</span>
+                    </div>
+                    <div class="edit-btn">
+                        <span>Edit</span>
+                    </div>
+                    <div class="delete-btn">
+                        <span id="delete-2b">Delete</span>
+                    </div>
+                </div>
+                <div class="about">
+                    <div>
+                        <span>Paper Bag</span>
+                        <span>Category</span>
+                    </div>
+                    <div>
+                        <span>A3 size</span>
+                        <span>Dimension</span>
+                    </div>
+                </div>
+                <div class="handler">
+                    <div class="view-btn" id="details-2">View</div>
+                    <div class="edit-btn">Edit</div>
+                    <div class="delete-btn" id="delete-2">Delete</div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="view">
+                    <img src="./images/closed-calendar.svg" alt="">
+                    <div class="price">&#8358;3,000/unit</div>
+                </div>
+                <div class="list">
+                    <div>
+                        <span>Calendar</span>
+                        <span>Name</span>
+                    </div>
+                    <div>
+                        <span>Souvenirs</span>
+                        <span>Category</span>
+                    </div>
+                    <div>
+                        <span>Calendar</span>
+                        <span>Sub-category</span>
+                    </div>
+                    <div>
+                        <span>A5 size</span>
+                        <span>Dimension</span>
+                    </div>
+                    <div>
+                        <span class="price">&#8358;3,999</span>
+                        <span>price/unit</span>
+                    </div>
+                    <div class="view-btn">
+                        <span id="details-3b">View</span>
+                    </div>
+                    <div class="edit-btn">
+                        <span>Edit</span>
+                    </div>
+                    <div class="delete-btn">
+                        <span id="delete-3b">Delete</span>
+                    </div>
+                </div>
+                <div class="about">
+                    <div>
+                        <span>Calendar Printing</span>
+                        <span>Category</span>
+                    </div>
+                    <div>
+                        <span>A4 size paper</span>
+                        <span>Dimension</span>
+                    </div>
+                </div>
+                <div class="handler">
+                    <div class="view-btn" id="details-3">View</div>
+                    <div class="edit-btn">Edit</div>
+                    <div class="delete-btn" id="delete-3">Delete</div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="view">
+                    <img src="./images/black-tshirt.svg" alt="">
+                    <div class="price">&#8358;1,999/unit</div>
+                </div>
+                <div class="list">
+                    <div>
+                        <span>Shirt</span>
+                        <span>Name</span>
+                    </div>
+                    <div>
+                        <span>Display</span>
+                        <span>Category</span>
+                    </div>
+                    <div>
+                        <span>Shirt Printing</span>
+                        <span>Sub-category</span>
+                    </div>
+                    <div>
+                        <span>Any size</span>
+                        <span>Dimension</span>
+                    </div>
+                    <div>
+                        <span class="price">&#8358;1,999</span>
+                        <span>price/unit</span>
+                    </div>
+                    <div class="view-btn">
+                        <span id="details-4b">View</span>
+                    </div>
+                    <div class="edit-btn">
+                        <span>Edit</span>
+                    </div>
+                    <div class="delete-btn">
+                        <span id="delete-4b">Delete</span>
+                    </div>
+                </div>
+                <div class="about">
+                    <div>
+                        <span>Shirt Printing</span>
+                        <span>Category</span>
+                    </div>
+                    <div>
+                        <span>Any size</span>
+                        <span>Dimension</span>
+                    </div>
+                </div>
+                <div class="handler">
+                    <div class="view-btn" id="details-4">View</div>
+                    <div class="edit-btn">Edit</div>
+                    <div class="delete-btn" id="delete-4">Delete</div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="view">
+                    <img src="./images/calendar.svg" alt="">
+                    <div class="price">&#8358;3,999/unit</div>
+                </div>
+                <div class="list">
+                    <div>
+                        <span>Calendar</span>
+                        <span>Name</span>
+                    </div>
+                    <div>
+                        <span>Souvenirs</span>
+                        <span>Category</span>
+                    </div>
+                    <div>
+                        <span>Calendar</span>
+                        <span>Sub-category</span>
+                    </div>
+                    <div>
+                        <span>A5 size</span>
+                        <span>Dimension</span>
+                    </div>
+                    <div>
+                        <span class="price">&#8358;3,999</span>
+                        <span>price/unit</span>
+                    </div>
+                    <div class="view-btn">
+                        <span id="details-5b">View</span>
+                    </div>
+                    <div class="edit-btn">
+                        <span>Edit</span>
+                    </div>
+                    <div class="delete-btn">
+                        <span id="delete-5b">Delete</span>
+                    </div>
+                </div>
+                <div class="about">
+                    <div>
+                        <span>Calendar Printing</span>
+                        <span>Category</span>
+                    </div>
+                    <div>
+                        <span>A5 size</span>
+                        <span>Dimension</span>
+                    </div>
+                </div>
+                <div class="handler">
+                    <div class="view-btn" id="details-5">View</div>
+                    <div class="edit-btn">Edit</div>
+                    <div class="delete-btn" id="delete-5">Delete</div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="view">
+                    <img src="./images/paper-bag.svg" alt="">
+                    <div class="price">&#8358;5,999/unit</div>
+                </div>
+                <div class="list">
+                    <div>
+                        <span>Paper bag</span>
+                        <span>Name</span>
+                    </div>
+                    <div>
+                        <span>Souvenirs</span>
+                        <span>Category</span>
+                    </div>
+                    <div>
+                        <span>Paper Bag</span>
+                        <span>Sub-category</span>
+                    </div>
+                    <div>
+                        <span>A3 size</span>
+                        <span>Dimension</span>
+                    </div>
+                    <div>
+                        <span class="price">&#8358;5,999</span>
+                        <span>price/unit</span>
+                    </div>
+                    <div class="view-btn">
+                        <span id="details-6b">View</span>
+                    </div>
+                    <div class="edit-btn">
+                        <span>Edit</span>
+                    </div>
+                    <div class="delete-btn">
+                        <span id="delete-6b">Delete</span>
+                    </div>
+                </div>
+                <div class="about">
+                    <div>
+                        <span>Paper Bag</span>
+                        <span>Category</span>
+                    </div>
+                    <div>
+                        <span>A3 size</span>
+                        <span>Dimension</span>
+                    </div>
+                </div>
+                <div class="handler">
+                    <div class="view-btn" id="details-6">View</div>
+                    <div class="edit-btn">Edit</div>
+                    <div class="delete-btn" id="delete-6">Delete</div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="view">
+                    <img src="./images/closed-calendar.svg" alt="">
+                    <div class="price">&#8358;3,000/unit</div>
+                </div>
+                <div class="list">
+                    <div>
+                        <span>Calendar</span>
+                        <span>Name</span>
+                    </div>
+                    <div>
+                        <span>Souvenirs</span>
+                        <span>Category</span>
+                    </div>
+                    <div>
+                        <span>Calendar</span>
+                        <span>Sub-category</span>
+                    </div>
+                    <div>
+                        <span>A5 size</span>
+                        <span>Dimension</span>
+                    </div>
+                    <div>
+                        <span class="price">&#8358;3,999</span>
+                        <span>price/unit</span>
+                    </div>
+                    <div class="view-btn">
+                        <span id="details-7b">View</span>
+                    </div>
+                    <div class="edit-btn">
+                        <span>Edit</span>
+                    </div>
+                    <div class="delete-btn">
+                        <span id="delete-7b">Delete</span>
+                    </div>
+                </div>
+                <div class="about">
+                    <div>
+                        <span>Calendar Printing</span>
+                        <span>Category</span>
+                    </div>
+                    <div>
+                        <span>A4 size paper</span>
+                        <span>Dimension</span>
+                    </div>
+                </div>
+                <div class="handler">
+                    <div class="view-btn" id="details-7">View</div>
+                    <div class="edit-btn">Edit</div>
+                    <div class="delete-btn" id="delete-7">Delete</div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="view">
+                    <img src="./images/mockup-tshirt.svg" alt="">
+                    <div class="price">&#8358;3,999/unit</div>
+                </div>
+                <div class="list">
+                    <div>
+                        <span>T-shirt</span>
+                        <span>Name</span>
+                    </div>
+                    <div>
+                        <span>Souvenirs</span>
+                        <span>Category</span>
+                    </div>
+                    <div>
+                        <span>Shirt Printing</span>
+                        <span>Sub-category</span>
+                    </div>
+                    <div>
+                        <span>Any size</span>
+                        <span>Dimension</span>
+                    </div>
+                    <div>
+                        <span class="price">&#8358;3,999</span>
+                        <span>price/unit</span>
+                    </div>
+                    <div class="view-btn">
+                        <span id="details-8b">View</span>
+                    </div>
+                    <div class="edit-btn">
+                        <span>Edit</span>
+                    </div>
+                    <div class="delete-btn">
+                        <span id="delete-8b">Delete</span>
+                    </div>
+                </div>
+                <div class="about">
+                    <div>
+                        <span>Shirt Printing</span>
+                        <span>Category</span>
+                    </div>
+                    <div>
+                        <span>Any size</span>
+                        <span>Dimension</span>
+                    </div>
+                </div>
+                <div class="handler">
+                    <div class="view-btn" id="details-8">View</div>
+                    <div class="edit-btn">Edit</div>
+                    <div class="delete-btn" id="delete-8">Delete</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="details-background" id="details-background">
+            <div class="details-modal">
+                <img id="close-details" class="close-details" src="./images/nav-cancel.svg" alt="">
+                <div>
+                    <div class="header-item">Product Details</div>
+                </div>
+                <div>
+                    <div class="body-1">
+                        <div>
+                            <!-- dont forget to specify an small height for this image and pointer cursor -->
+                            <img src="./images/calendar.svg" alt="">
+                        </div>
+                        <div>
+                            <h4>Product Description</h4>
+                            <div>
+                                Est elit consectetur irure enim deserunt sit excepteur officia dolor cupidatat.
+                                Esse id non incididunt dolor ullamco reprehenderit et dolor quis consectetur
+                                mollit nulla. Non adipisicing adipisicing mollit aliqua eu minim nisi commodo
+                                deserunt ipsum eu eu dolore et.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-2">
+                        <div>
+                            <span>Flyers</span>
+                            <span>Product name</span>
+                        </div>
+                        <div>
+                            <span>Printing</span>
+                            <span>Job Category</span>
+                        </div>
+                        <div>
+                            <span>Souvenirs</span>
+                            <span>Product category</span>
+                        </div>
+                        <div>
+                            <span>Flyer</span>
+                            <span>Product sub category</span>
+                        </div>
+                        <div>
+                            <span>A5 size</span>
+                            <span>Dimension</span>
+                        </div>
+                        <div>
+                            <span>100</span>
+                            <span>Product in sets</span>
+                        </div>
+                        <div>
+                            <span>100</span>
+                            <span>Min. Qty</span>
+                        </div>
+                        <div>
+                            <span>&#8358;5,999</span>
+                            <span>Price</span>
+                        </div>
+                    </div>
+                    <div class="body-3">
+                        <div>Edit</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="delete-background" id="delete-background">
+            <div class="delete-modal">
+                <div class="modal-padding">
+                    <img id="close-delete" class="close-delete" src="./images/nav-cancel.svg" alt="">
+                    <h2>Delete product</h2>
+                    <div class="question">
+                        Are you sure you want to delete this product? By doing this you would lose
+                        all information regarding this product.
+                    </div>
+                </div>
+                <div class="response">
+                    <div class="cancel" id="cancel-delete">Cancel</div>
+                    <div class="delete" id="delete-btn">Delete</div>
+                </div>
+            </div>
+        </div>
+        <div class="delete-successful" id="notify-delete">
+            <img src="./images/warning.svg" alt="">
+            <span>Product removed from your list successfully</span>
+        </div>
+    </section>
+    <section class="add-products hide" id="add-products">
+        <div class="no-form">
+                <img id="go-back" src="./images/go-back.svg" alt="">
+                <h1>Add new product</h1>
+                <h3>Add your own product that will be displayed on the main page</h3>
+        </div>
+        <form action="" class="form">
+            <div class="field-group" >
+                <label for="">Product name</label>
+                <input type="text" >
+            </div>
+            <div class="field-group">
+                <label for="">Job category</label>
+                <select >
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="field-group">
+                <label for="">Product category</label>
+                <select >
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="field-group">
+                <label for="">Product sub category</label>
+                <select >
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="field-group">
+                <label for="">Dimension</label>
+                <input type="text">
+            </div>
+            <div class="field-group">
+                <label for="">Do you print in sets</label>
+                <input type="text">
+            </div>
+            <div class="field-group">
+                <label for="">Pricing</label>
+                <input type="text">
+            </div>
+            <div class="field-group">
+                <label for="">Do you print in sets</label>
+                <input type="text">
+            </div>
+            <div class="field-group">
+                <label for="">Description</label>
+                <textarea cols="30" rows="10"></textarea>
+            </div>
+            <div class="field-group">
+                <label for="">Product picture</label>
+                <div class="add-icon-container">
+                    <img class="add-icon" height="33px" src="./images/add-icon.svg" alt="">
+                    <input type="file" class="add-image">
+                </div>
+            </div>
+            <!-- am using this empty div below to hold down a design, it shouldnt be removed -->
+            <div class="field-group"></div>
+            <div class="field-group" style="margin-top: 30px;"><input type="submit" value="Save Product" id="save-product"></div>
+        </form>
+        <div class="added-successful" id="notify-add">
+            <img src="./images/success.svg" alt="">
+            <span>Product added to your list and being verified</span>
+        </div>
+    </section>
+</main>
+
+    <!-- javascript for main section -->
+    <script src="./merchantproducts.js"></script>
+</body>
+</html>

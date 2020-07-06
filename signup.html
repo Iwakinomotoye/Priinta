@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Priinta:: Abuja</title>
+    <link rel="stylesheet" href="./merchant_signup.css"/>
+</head>
+<body>
+    <div class="left-edge">
+        <span class="line-through"></span>
+        <div class="tablet-side">
+            <a href="./index.html" class="home-icon">
+                <img src="./images/nav-desktop-icon2.svg" alt="">
+            </a>
+            <div class="questions">
+                <p>
+                    <span class="check-mark">
+                        <img src="./images/check-icon.svg" alt="">
+                    </span>
+                    Do you design?
+                </p>
+                <p>
+                    <span class="check-mark">
+                        <img src="./images/check-icon.svg" alt="">
+                    </span>
+                    Do you print?
+                </p>
+                <p>
+                    <span class="check-mark">
+                        <img src="./images/check-icon.svg" alt="">
+                    </span>
+                    Do you Package?
+                </p>
+            </div>
+            <div class="header">
+                <h2>Go Ahead</h2>
+                <h2>Sign up now &</h2>
+                <h2>Enjoy amazing rewards</h2>
+            </div>
+        </div>
+    </div>
+    <main class="noselect">
+        <section class="section-one">
+            <a href="./index.html" class="home-icon mobile-view">
+                <img src="./images/nav-mobile-icon.svg" alt="">
+            </a>
+        </section>
+        <section class="section-two">
+            <form action="" id="form1" class="form1">
+                <h1>Sign up on Pritedi</h1>
+                <div class="field-group first" >
+                    <label for="">First Name</label>
+                    <input type="text" id="firstname" maxlength="18">
+                </div>
+                <div class="field-group last">
+                    <label for="">Last Name</label>
+                    <input type="text" id="lastname" maxlength="18">
+                </div>
+                <div class="field-group">
+                    <label for="">Email address</label>
+                    <input type="email" id="email" maxlength="30">
+                </div>
+                <div class="field-group">
+                    <label for="">Password</label>
+                    <div class="password-group">
+                        <input type="password" id="password" maxlength="10">
+                        <img class="expose-password" id="expose-password" src="./images/icon-eye.svg" alt="">
+                    </div>
+                </div>
+                <div id="warning1"></div>
+                <input type="submit" id="confirm1" value="Create Account"><br>
+
+                <!-- loader for the signup -->
+                <img src="./images/bouncing-ball.svg" alt="" id="loader1" style="display:none">
+            </form>
+
+            <form action="" id="form2" class="form2 hide">
+                <h1>Welcome</h1>
+                <!-- pass the value of the input email into this your-email element -->
+                <p class="your-email" id="emailshow"></p>
+                    <div class="field-group first" >
+                        <label for="">I am a</label>
+
+
+                        <div class="checkbox-input" id="second-container">
+                            <input type="radio" name="profession" id="second-checkbox" value="1">
+                            <div class="input-container">
+                                <span class="checkbox-span">
+                                    <span class="mark"></span>
+                                </span>
+                            </div>
+                            <span>Printer</span>
+                        </div>
+
+                        <div class="checkbox-input" id="first-container">
+                            <input type="radio" name="profession" id="first-checkbox" value="2">
+                            <div class="input-container">
+                                <span class="checkbox-span">
+                                    <span class="mark"></span>
+                                </span>
+                            </div>
+                            <span>Designer</span>
+                        </div>
+
+                    </div>
+                    <div class="field-group last">
+                        <label for="">Username</label>
+                        <input type="text" id="username">
+                    </div>
+                    <a href="" class="terms">
+                        By clicking button below, you agree to pritedi's terms of acceptable use
+                    </a>
+                    <input type="submit" id="confirm2" value="Create Account"><br>
+                    <div id="warning2"></div>
+            </form>
+
+            <form action="" id="form3" class="form3 hide">
+                <h1>Welcome</h1>
+                <!-- pass the value of the input email into this your-email element -->
+                <p class="your-email" id="emailshow2"></p>
+                <div class="verify-div">
+                    <img class="tablet768-view" src="./images/verify.svg" alt="">
+                    <h3>Verify your email to proceed</h3>
+                        <p>We just sent an email to the address: <span id="emailshow3"> </span></p>
+                        <p>Please check your email and click on the link provided to verify your address.</p>
+                        <input type="submit" id="confirm3" value="Resend verification mail">
+                        <br><br>
+                        <input type="submit" value="Continue to setup"  id="confirm9">
+                        <input type="hidden" id="resendemail" >
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
+<script>
+ var site ="<?php echo base_url()?>"
+</script>
+<script src="./merchant-signup.js"></script>

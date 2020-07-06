@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Priinta:: Abuja</title>
+    <link rel="stylesheet" href="./merchant_signup.css"/>
+</head>
+<body>
+    <div class="left-edge">
+        <span class="line-through"></span>
+        <div class="tablet-side">
+            <a href="./index.html" class="home-icon">
+                <img src="./images/nav-desktop-icon2.svg" alt="">
+            </a>
+            <div class="login-header">
+            <h2>Discover the best designer, printers and packagers all on one platform</h2>
+                <!-- <h2 class="h2-one">Discover the best designer,</h2>
+                <h2 class="h2-two">printers and packagers all</h2>
+                <h2 class="h3-three">on one platform</h2> -->
+            </div>
+            <div class="services">
+                <p>
+                    <span class="check-mark">
+                        <img src="./images/check-icon.svg" alt="">
+                    </span>
+                    Shirt Design
+                </p>
+                <p>
+                    <span class="check-mark">
+                        <img src="./images/check-icon.svg" alt="">
+                    </span>
+                    Flyers Design
+                </p>
+                <p>
+                    <span class="check-mark">
+                        <img src="./images/check-icon.svg" alt="">
+                    </span>
+                    Matte Finishing
+                </p>
+                <p>
+                    <span class="check-mark">
+                        <img src="./images/check-icon.svg" alt="">
+                    </span>
+                    Business Cards
+                </p>
+                <p>
+                    <span class="check-mark">
+                        <img src="./images/check-icon.svg" alt="">
+                    </span>
+                    Billboards
+                </p>
+                <p>
+                    <span class="check-mark">
+                        <img src="./images/check-icon.svg" alt="">
+                    </span>
+                    Paper Bags
+                </p>
+                <p>
+                    <span class="check-mark">
+                        <img src="./images/check-icon.svg" alt="">
+                    </span>
+                    And many more...
+                </p>
+            </div>
+        </div>
+    </div>
+    <main class="noselect">
+        <section class="section-one">
+            <a href="./index.html" class="home-icon mobile-view">
+                <img src="./images/nav-mobile-icon.svg" alt="">
+            </a>
+        </section>
+        <section class="section-two">
+            <form action="">
+                <h1>
+                    <span class="tablet768-view">Welcome back,</span>
+                    <span>Log in to Pritedi</span>
+                </h1>
+                <div class="field-group">
+                    <label for="">Email address</label>
+                    <input type="text" id="email">
+                </div>
+                <div class="field-group">
+                    <label for="">Password</label>
+                    <div class="password-group">
+                        <input type="password" id="password">
+                        <img class="expose-password" id="expose-password" src="./images/icon-eye.svg" alt="">
+                    </div>
+                </div>
+                <div class="redirect block">
+                    <span class="tablet768-view"><a href="#forgotPassword">Forgot Password?</a></span>
+                    <span class="mobile-view"><a href="#forgotPassword">Forgot password?</a></span>
+                </div>
+                <input type="submit" id="loginButton" value="Log In">
+                <div class="redirect match">
+                    <span class="login">New Here?<a href="./signup.html">Sign up</a></span>
+                    <br>
+                    <div id="errorDiv"></div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
+<script>
+
+var confirm1 = document.getElementById("loginButton");
+confirm1.addEventListener("click",  function(e) {
+    e.preventDefault();
+
+    var email = document.getElementById("email").value;
+    var password  = document.getElementById("password").value;
+
+     if(email == ""){ ReportError("Please provide Email", "errorDiv"); return;}
+     if(password == ""){ ReportError("Please provide  Password", "errorDiv"); return;}
+
+
+     var xml = new XMLHttpRequest();
+
+    var json = JSON.stringify({ "email":email,"password":password});
+   	// var url = "merchants/attempLogin";
+   	var formData = new FormData();
+   	formData.append("data", json);
+   	xml.open("POST", url, true);
+   	xml.onreadystatechange = function()
+   	{
+   			if(xml.readyState == 4 && xml.status == 200){
+
+   				if(xml.responseText.trim().includes("priinta_success_status"))
+          {
+            window.location.href = site + "merchants/dashboard";
+          }
+   				else
+          {
+   					ReportError("Invalid login details", "errorDiv");
+
+   				}
+   			}
+   	}
+
+
+    xml.send(formData);
+})
+
+function ReportError(msg, area)
+{
+  document.getElementById(area).innerHTML = msg;
+  setTimeout(function(){ document.getElementById(area).innerHTML = '';}, 3500);
+}
+
+var exposePassword = document.getElementById("expose-password");
+
+exposePassword.onclick = function() {
+    if(password.type == "password") {
+        password.type = "text";
+    } else {
+        password.type = "password";
+    }
+}
+</script>
